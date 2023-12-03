@@ -1,0 +1,140 @@
+/* 
+    background-color: #800ef1
+                      #9c43f4
+*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: #800ef1;
+    font-family: sans-serif;
+    
+}
+
+img{
+    height: 296px;
+    width: 296px;
+    border-radius: 50%;
+}
+
+h2{
+    text-align: center;
+    font-size: 3.75rem;
+    font-weight: 700;
+    padding: 10vh;
+    color: #ffffff;
+}
+h3{
+    font-size: 1.875rem;
+    line-height: 1.2;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.cards p{
+    font-size: 16px;
+    margin: 24px 0px 0px ;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-evenly;
+}
+
+.cards{
+    width: calc((100% - 3rem) / 3);
+    height: auto;
+    padding: 10px;
+    background-color: #ffffff;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+.cards a{
+    padding: 3px 0px;
+    margin: 20px 106px 0px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid #800ef1 ;
+    
+}
+
+.cards a:hover{
+    color: #800ef1;
+    border-bottom: 2px solid #ffffff;
+}
+
+.footer-body a {
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px solid #ffffff;
+}
+.footer-body a:hover {
+    border-bottom: 1px solid #bde0fc;
+    color: #dddddd;
+}
+
+.footer-body {
+    color: #ffffff;
+    margin: 40px 500px 60px;
+}
+
+footer {
+    color: #ffffff;
+    background-color: #333333;
+    text-align: center;
+    font-size: 12px;
+    height: 10vh;
+}
+footer p {
+    padding: 26px;
+}
+footer a {
+    color: #bde0fc;
+
+}
+
+footer a:hover {
+    color: gray;
+    text-decoration: none;
+}
+
+@media (max-width: 1285px) {
+    .cards {
+      width: calc((100% - 1rem) / 3);
+    }
+  }
+
+@media (min-width: 777px) and (max-width: 1285px) {
+    .cards {
+      width: calc((100% - 1rem) / 2);
+    }
+  }
+
+  @media (min-width: 500px) and (max-width: 777px) {
+    .cards {
+      width: calc((100% - 0rem) / 1);
+    }
+  }
+@media (min-width: 0px) and (max-width: 499px) {
+    .cards {
+      width: calc((100% - 0rem) / 1);
+    }
+  }  
